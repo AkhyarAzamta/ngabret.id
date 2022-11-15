@@ -1,0 +1,11 @@
+.container {
+    height: 200px;
+    background-color: rgb(51, 50, 49);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    color:rgb(202, 201, 199)
+}

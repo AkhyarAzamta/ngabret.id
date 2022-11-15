@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <>
-        <Navbar expand={expand} className={["mb-3",styles.navBg]}>
+        <Navbar expand={expand} className={["mb-3",styles.navBg]} sticky='top'>
           <Container fluid>
             <Navbar.Brand href="#" className={styles.navText}>{storeName}</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -28,9 +28,9 @@ const Header = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1" className={styles.navText}>Home</Nav.Link>
-                  <Nav.Link href="#action2" className={styles.navText}>Contact</Nav.Link>
-                  <Nav.Link href="#action3" className={styles.navText}>About</Nav.Link>
+                  <Nav.Link href="#home" className={styles.navText}>Home</Nav.Link>
+                  <Nav.Link href="#contact" className={styles.navText}>Contact</Nav.Link>
+                  <Nav.Link href="#about" className={styles.navText}>About</Nav.Link>
                 </Nav>               
               </Offcanvas.Body>
             </Navbar.Offcanvas>
